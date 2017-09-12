@@ -29,6 +29,8 @@
 @interface MusicPlayerVC ()
 {
  CGFloat _angle;
+ NSArray *_mstArray;
+ 
 }
 @property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
 
@@ -70,6 +72,9 @@
 //	[self.player playMediaWithUrl:_musicUrl tempPath:nil desPath:nil delegate:weakSelf];
   }
  }];
+ 
+ 
+ _mstArray = @[@"iOS进阶指南.pdf",@"iosAnimation.pdf",@"mst1.docx",@"mst2.docx",@"mst3.docx",@"mst4.docx"];
  _angle = 0.0f;
  
 }
@@ -326,11 +331,8 @@ CGRect rect =  [UIScreen mainScreen].bounds;
   {
   cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
   }
- if (indexPath.row==0) {
-  cell.textLabel.text = @"iosAnimation.pdf";
- }else{
-   cell.textLabel.text = @"iOS进阶指南.pdf";
- }
+
+  cell.textLabel.text = _mstArray[indexPath.row];
  
  [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
  
@@ -343,8 +345,8 @@ CGRect rect =  [UIScreen mainScreen].bounds;
  
  [tableView deselectRowAtIndexPath:indexPath animated:NO];
  FileQuickLookDeleVc *quickLookDeleVc = (FileQuickLookDeleVc *)self.childViewControllers[0];
- 
-NSString *path =  [[NSBundle mainBundle]pathForResource:(indexPath.row>=1)?@"iOS进阶指南.pdf":@"iosAnimation.pdf" ofType:nil];
+ NSString *path =  [[NSBundle mainBundle]pathForResource:_mstArray[indexPath.row] ofType:nil];
+
  
  quickLookDeleVc.fileURL = [NSURL fileURLWithPath:path];
  QLPreviewController *preview = [[QLPreviewController alloc] initWithNibName:nil bundle:nil];
@@ -367,7 +369,7 @@ NSString *path =  [[NSBundle mainBundle]pathForResource:(indexPath.row>=1)?@"iOS
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
  
- return 2;
+ return _mstArray.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section

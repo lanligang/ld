@@ -145,6 +145,10 @@
 		8F2B94041F5FED8800ADDE02 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		8F2B94071F5FF83A00ADDE02 /* gd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gd.png; sourceTree = "<group>"; };
 		8F2B94091F5FFDBD00ADDE02 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		8F4C04131F681492007DC80A /* mst1.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = mst1.docx; sourceTree = "<group>"; };
+		8F4C04141F681492007DC80A /* mst3.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = mst3.docx; sourceTree = "<group>"; };
+		8F4C04151F681492007DC80A /* mst2.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = mst2.docx; sourceTree = "<group>"; };
+		8F4C04161F681492007DC80A /* mst4.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = mst4.docx; sourceTree = "<group>"; };
 		8F5A011B1F5ED3210002B8E2 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		8F5A011C1F5ED3210002B8E2 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		8F5A011D1F5ED3210002B8E2 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
@@ -461,6 +465,10 @@
 		8FA58C151F5A7707006F9883 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F4C04131F681492007DC80A /* mst1.docx */,
+				8F4C04141F681492007DC80A /* mst3.docx */,
+				8F4C04151F681492007DC80A /* mst2.docx */,
+				8F4C04161F681492007DC80A /* mst4.docx */,
 				8FA58C481F5A7715006F9883 /* huanjiu.json */,
 				8F2B93FD1F5FD7AD00ADDE02 /* xs.json */,
 				8FA58C161F5A7707006F9883 /* main.m */,
