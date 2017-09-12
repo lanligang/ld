@@ -1,2 +1,2 @@
 # ld
-[!ld][demFM.gif]
+![ld](demFM.gif)
