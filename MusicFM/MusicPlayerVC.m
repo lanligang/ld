@@ -74,7 +74,7 @@
  }];
  
  
- _mstArray = @[@"iOS进阶指南.pdf",@"iosAnimation.pdf",@"mst1.docx",@"mst2.docx",@"mst3.docx",@"mst4.docx"];
+ _mstArray = @[@"1.doc"];
  _angle = 0.0f;
  
 }
@@ -345,17 +345,23 @@ CGRect rect =  [UIScreen mainScreen].bounds;
  
  [tableView deselectRowAtIndexPath:indexPath animated:NO];
  FileQuickLookDeleVc *quickLookDeleVc = (FileQuickLookDeleVc *)self.childViewControllers[0];
- NSString *path =  [[NSBundle mainBundle]pathForResource:_mstArray[indexPath.row] ofType:nil];
+ NSString *name = [_mstArray[indexPath.row] componentsSeparatedByString:@"."][0];
+ NSString *type = [_mstArray[indexPath.row] componentsSeparatedByString:@"."][1];
+ NSString *path =  [[NSBundle mainBundle]pathForResource:name ofType:type];
 
- 
- quickLookDeleVc.fileURL = [NSURL fileURLWithPath:path];
- QLPreviewController *preview = [[QLPreviewController alloc] initWithNibName:nil bundle:nil];
- preview.dataSource = quickLookDeleVc;
- preview.delegate = quickLookDeleVc;
- [preview setCurrentPreviewItemIndex:0];
- preview.modalPresentationStyle = UIModalPresentationCustom;
- 
- [self presentViewController:preview animated:YES completion:nil];
+ if (path)
+ {
+  quickLookDeleVc.fileURL = [NSURL fileURLWithPath:path];
+  
+  QLPreviewController *preview = [[QLPreviewController alloc] initWithNibName:nil bundle:nil];
+  preview.dataSource = quickLookDeleVc;
+  preview.delegate = quickLookDeleVc;
+  [preview setCurrentPreviewItemIndex:0];
+  preview.modalPresentationStyle = UIModalPresentationCustom;
+  
+  [self presentViewController:preview animated:YES completion:nil];
+
+ }
  
   // [self.navigationController pushViewController:preview animated:YES];
 

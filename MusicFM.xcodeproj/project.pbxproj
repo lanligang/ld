@@ -75,8 +75,6 @@
 		8FC6A2171F62279500B5ADAE /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC6A2161F62279500B5ADAE /* PlayerManager.m */; };
 		8FC6A21A1F62346300B5ADAE /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC6A2191F62346300B5ADAE /* MineViewController.m */; };
 		8FC6A21D1F62498200B5ADAE /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC6A21C1F62498200B5ADAE /* BezierPathView.m */; };
-		8FF2E19E1F60163F001778A8 /* iosAnimation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8FF2E19C1F60163F001778A8 /* iosAnimation.pdf */; };
-		8FF2E1A01F6016A5001778A8 /* iOS进阶指南.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8FF2E19F1F6016A5001778A8 /* iOS进阶指南.pdf */; };
 		8FF2E1A41F601711001778A8 /* FileQuickLookDeleVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF2E1A31F601711001778A8 /* FileQuickLookDeleVc.m */; };
 		BA840589400C6A91E46A2678 /* libPods-MusicFM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 899423BBB5EC7CA9C29E5938 /* libPods-MusicFM.a */; };
 /* End PBXBuildFile section */
@@ -145,10 +143,6 @@
 		8F2B94041F5FED8800ADDE02 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		8F2B94071F5FF83A00ADDE02 /* gd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gd.png; sourceTree = "<group>"; };
 		8F2B94091F5FFDBD00ADDE02 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
-		8F4C04131F681492007DC80A /* mst1.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = mst1.docx; sourceTree = "<group>"; };
-		8F4C04141F681492007DC80A /* mst3.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = mst3.docx; sourceTree = "<group>"; };
-		8F4C04151F681492007DC80A /* mst2.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = mst2.docx; sourceTree = "<group>"; };
-		8F4C04161F681492007DC80A /* mst4.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = mst4.docx; sourceTree = "<group>"; };
 		8F5A011B1F5ED3210002B8E2 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		8F5A011C1F5ED3210002B8E2 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		8F5A011D1F5ED3210002B8E2 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
@@ -237,8 +231,6 @@
 		8FC6A2191F62346300B5ADAE /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		8FC6A21B1F62498200B5ADAE /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
 		8FC6A21C1F62498200B5ADAE /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
-		8FF2E19C1F60163F001778A8 /* iosAnimation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = iosAnimation.pdf; sourceTree = "<group>"; };
-		8FF2E19F1F6016A5001778A8 /* iOS进阶指南.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "iOS进阶指南.pdf"; sourceTree = "<group>"; };
 		8FF2E1A21F601711001778A8 /* FileQuickLookDeleVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileQuickLookDeleVc.h; sourceTree = "<group>"; };
 		8FF2E1A31F601711001778A8 /* FileQuickLookDeleVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileQuickLookDeleVc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -465,10 +457,6 @@
 		8FA58C151F5A7707006F9883 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8F4C04131F681492007DC80A /* mst1.docx */,
-				8F4C04141F681492007DC80A /* mst3.docx */,
-				8F4C04151F681492007DC80A /* mst2.docx */,
-				8F4C04161F681492007DC80A /* mst4.docx */,
 				8FA58C481F5A7715006F9883 /* huanjiu.json */,
 				8F2B93FD1F5FD7AD00ADDE02 /* xs.json */,
 				8FA58C161F5A7707006F9883 /* main.m */,
@@ -513,8 +501,6 @@
 				8F2B93FF1F5FEAA700ADDE02 /* next.png */,
 				8F2B94011F5FEAAE00ADDE02 /* last.png */,
 				8F2B94091F5FFDBD00ADDE02 /* close.png */,
-				8FF2E19C1F60163F001778A8 /* iosAnimation.pdf */,
-				8FF2E19F1F6016A5001778A8 /* iOS进阶指南.pdf */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -712,9 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FA58C491F5A7715006F9883 /* huanjiu.json in Resources */,
-				8FF2E19E1F60163F001778A8 /* iosAnimation.pdf in Resources */,
 				8F826A911F5F9FF400D25955 /* MusicPlayerVC.xib in Resources */,
-				8FF2E1A01F6016A5001778A8 /* iOS进阶指南.pdf in Resources */,
 				8F2B94051F5FED8800ADDE02 /* pasue.png in Resources */,
 				8FA58C4B1F5A7775006F9883 /* VC.storyboard in Resources */,
 				8F2B93F71F5FC40B00ADDE02 /* MusicTableViewCell.xib in Resources */,
